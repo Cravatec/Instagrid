@@ -13,6 +13,8 @@
 		2272DB3527B2B840000023B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2272DB3327B2B840000023B8 /* Main.storyboard */; };
 		2272DB3727B2B841000023B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2272DB3627B2B841000023B8 /* Assets.xcassets */; };
 		2272DB3A27B2B841000023B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2272DB3827B2B841000023B8 /* LaunchScreen.storyboard */; };
+		227FABE127B2BAC300791B4F /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 227FABDF27B2BAC300791B4F /* ThirstySoftRegular.otf */; };
+		227FABE227B2BAC300791B4F /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 227FABE027B2BAC300791B4F /* Delm-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2272DB3627B2B841000023B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2272DB3927B2B841000023B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2272DB3B27B2B841000023B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227FABDF27B2BAC300791B4F /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		227FABE027B2BAC300791B4F /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		2272DB2C27B2B840000023B8 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
+				227FABDE27B2BAA000791B4F /* Controller */,
+				227FABDD27B2BA9700791B4F /* View */,
+				227FABDC27B2BA8E00791B4F /* Model */,
+				227FABDB27B2BA7F00791B4F /* Supporting Files */,
+			);
+			path = Instagrid;
+			sourceTree = "<group>";
+		};
+		227FABDB27B2BA7F00791B4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				2272DB2D27B2B840000023B8 /* AppDelegate.swift */,
 				2272DB2F27B2B840000023B8 /* SceneDelegate.swift */,
-				2272DB3127B2B840000023B8 /* ViewController.swift */,
-				2272DB3327B2B840000023B8 /* Main.storyboard */,
 				2272DB3627B2B841000023B8 /* Assets.xcassets */,
 				2272DB3827B2B841000023B8 /* LaunchScreen.storyboard */,
 				2272DB3B27B2B841000023B8 /* Info.plist */,
+				227FABE027B2BAC300791B4F /* Delm-Medium.otf */,
+				227FABDF27B2BAC300791B4F /* ThirstySoftRegular.otf */,
 			);
-			path = Instagrid;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		227FABDC27B2BA8E00791B4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		227FABDD27B2BA9700791B4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2272DB3327B2B840000023B8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		227FABDE27B2BAA000791B4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2272DB3127B2B840000023B8 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2272DB3A27B2B841000023B8 /* LaunchScreen.storyboard in Resources */,
+				227FABE227B2BAC300791B4F /* Delm-Medium.otf in Resources */,
 				2272DB3727B2B841000023B8 /* Assets.xcassets in Resources */,
+				227FABE127B2BAC300791B4F /* ThirstySoftRegular.otf in Resources */,
 				2272DB3527B2B840000023B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,13 +329,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 232L77WD2C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagrid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +348,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,13 +359,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 232L77WD2C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagrid/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
