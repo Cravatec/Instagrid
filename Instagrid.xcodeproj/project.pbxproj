@@ -60,6 +60,7 @@
 		2272DB2C27B2B840000023B8 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
+				2272DB3B27B2B841000023B8 /* Info.plist */,
 				227FABDE27B2BAA000791B4F /* Controller */,
 				227FABDD27B2BA9700791B4F /* View */,
 				227FABDC27B2BA8E00791B4F /* Model */,
@@ -75,7 +76,6 @@
 				2272DB2F27B2B840000023B8 /* SceneDelegate.swift */,
 				2272DB3627B2B841000023B8 /* Assets.xcassets */,
 				2272DB3827B2B841000023B8 /* LaunchScreen.storyboard */,
-				2272DB3B27B2B841000023B8 /* Info.plist */,
 				227FABE027B2BAC300791B4F /* Delm-Medium.otf */,
 				227FABDF27B2BAC300791B4F /* ThirstySoftRegular.otf */,
 			);
@@ -338,7 +338,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,7 +368,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
