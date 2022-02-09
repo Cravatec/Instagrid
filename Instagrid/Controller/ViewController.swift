@@ -22,11 +22,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
-
-    @IBOutlet weak var image1: UIImageView!
     
-    @IBAction func importImage(_ sender: Any) {
-        
+    @IBOutlet weak var imageView1: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var imageView3: UIImageView!
+    
+    @IBAction func importImage1(_ sender: Any) {
+    }
+    
+    @IBAction func importImage2(_ sender: Any) {
+    }
+    
+    @IBAction func importImage3(_ sender: Any) {
     }
     
 }
