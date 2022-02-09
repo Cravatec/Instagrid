@@ -19,6 +19,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -42,7 +43,6 @@
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
                                                             <action selector="importImage1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnT-OU-a8Y"/>
-                                                            <action selector="importImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dO8-th-mfU"/>
                                                         </connections>
                                                     </button>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HVg-U5-dk6" userLabel="Image View2">
@@ -259,13 +259,11 @@
                         <outlet property="button1" destination="by3-W6-7is" id="NiE-9j-rmS"/>
                         <outlet property="button2" destination="tM9-VZ-jWX" id="lt4-LU-NaZ"/>
                         <outlet property="button3" destination="Buo-KC-bFv" id="ww8-bo-078"/>
-                        <outlet property="image1" destination="ECu-8y-w74" id="EP9-Pr-hy4"/>
                         <outlet property="imageView1" destination="hQi-7r-xU0" id="L9C-yg-bFf"/>
                         <outlet property="imageView2" destination="HVg-U5-dk6" id="5sk-Qo-bVT"/>
                         <outlet property="imageView3" destination="NVm-2j-m9P" id="Kss-8D-cIK"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.399999999999999" y="93.103448275862078"/>
         </scene>

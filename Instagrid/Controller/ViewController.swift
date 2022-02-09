@@ -28,12 +28,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView3: UIImageView!
     
     @IBAction func importImage1(_ sender: Any) {
+        print("Button 1 tapped")
     }
     
     @IBAction func importImage2(_ sender: Any) {
+        print("Button 2 tapped")
+
     }
     
     @IBAction func importImage3(_ sender: Any) {
+        print("Button 3 tapped")
+
     }
     
 }
