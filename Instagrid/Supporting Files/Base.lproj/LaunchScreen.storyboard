@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,20 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagrid" translatesAutoresizingMaskIntoConstraints="NO" id="Uwl-KV-EQA">
-                                <rect key="frame" x="81" y="409" width="252" height="78"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="wgw-qc-Tjt">
+                                <rect key="frame" x="117" y="358" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Uwl-KV-EQA" secondAttribute="height" multiplier="42:13" id="Rxl-JZ-mjH"/>
+                                    <constraint firstAttribute="width" secondItem="wgw-qc-Tjt" secondAttribute="height" multiplier="1:1" id="4sa-au-L7X"/>
+                                    <constraint firstAttribute="height" constant="180" id="eH8-VY-06h"/>
+                                    <constraint firstAttribute="width" constant="180" id="qPR-GN-ism"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.40517753359999997" green="0.5527241826" blue="0.7668325305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.30196079609999998" green="0.53333336109999996" blue="0.76470589639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Uwl-KV-EQA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PDs-Ml-bdr"/>
-                            <constraint firstItem="Uwl-KV-EQA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Y6m-aU-iKF"/>
-                            <constraint firstItem="Uwl-KV-EQA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cRi-sQ-wTX"/>
-                            <constraint firstItem="Uwl-KV-EQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="365" id="vAD-rG-HaV"/>
+                            <constraint firstItem="wgw-qc-Tjt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="91W-tY-5qE"/>
+                            <constraint firstItem="wgw-qc-Tjt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ukY-A7-v4b"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Instagrid" width="41.5" height="13"/>
+        <image name="Image" width="512" height="512"/>
     </resources>
 </document>
