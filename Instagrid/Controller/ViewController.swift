@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         
         layoutSelect(.layout2)
         
-        swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(share(_:)))
+        swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(shareSwipe(_:)))
         
         grid.addGestureRecognizer(swipeGesture)
         
@@ -69,6 +69,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             gridBox[3].isHidden = false
         }
     }
+    
     func loadPhotos() {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
@@ -123,7 +124,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         }
     }
     
-    @objc func share(_ sender: UISwipeGestureRecognizer) {
+    @objc func shareSwipe(_ sender: UISwipeGestureRecognizer) {
         if sender.state == .recognized {
             gridAnimation()
             sharePhotos()
