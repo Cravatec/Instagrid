@@ -12,7 +12,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBOutlet var layouts: [UIButton]!
@@ -28,14 +27,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     enum Layouts {
         case layout1, layout2, layout3
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         layoutSelect(.layout2)
         
         swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(share(_:)))
-       
+        
         grid.addGestureRecognizer(swipeGesture)
         
         NotificationCenter.default.addObserver(self, selector: #selector(changeDeviceOrientation),
@@ -100,7 +99,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             buttonSwitch = gridBox[3]
         }
     }
-     
+    
     @IBAction func pushLayoutButtons(_ sender: UIButton) {
         let tag = sender.tag
         if tag == 4 {
@@ -167,7 +166,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             swipeLabel.isHidden = true
         }
     }
-
+    
     func reverseGridAnimation() {
         UIView.animate(withDuration: 0.5, delay: 0, animations: {
             self.grid.transform = .identity
