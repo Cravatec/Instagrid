@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Authorize photo access</string>
+	<string>Allow Instagrid to save your creation to your photo library</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Authorize photo access</string>
+	<string>Allow Instagrid to save your creation to your photo library</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>Fonts provided by application</key>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -208,17 +209,18 @@
                                     <constraint firstAttribute="height" constant="80" id="nbN-Zw-hto"/>
                                     <constraint firstAttribute="width" secondItem="cP4-XI-sZq" secondAttribute="height" multiplier="69:20" id="uwR-d5-noo"/>
                                 </constraints>
-                                <variation key="heightClass=compact-widthClass=compact" axis="vertical">
+                                <variation key="heightClass=compact" alignment="bottom" axis="vertical"/>
+                                <variation key="heightClass=compact-widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="nbN-Zw-hto"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact-widthClass=regular" axis="vertical">
+                                <variation key="heightClass=compact-widthClass=regular">
                                     <mask key="constraints">
                                         <exclude reference="nbN-Zw-hto"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="horizontal"/>
                             </stackView>
                             <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iDF-y2-AZf" userLabel="Swipe View">
                                 <rect key="frame" x="113.5" y="114.5" width="148" height="37"/>
@@ -239,6 +241,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
