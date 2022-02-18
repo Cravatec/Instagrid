@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,12 +20,16 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kx1-4B-zRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q6Z-E3-x13"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbu-wU-A9S" userLabel="Grid">
-                                <rect key="frame" x="313" y="64" width="300" height="300"/>
+                                <rect key="frame" x="313" y="94" width="300" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-qH-prI">
                                         <rect key="frame" x="15" y="15" width="270" height="270"/>
@@ -79,7 +82,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="yBI-Xm-htn" userLabel="Cadre"/>
                                 <color key="backgroundColor" red="0.1294117719" green="0.44705885649999999" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                                 <constraints>
@@ -202,7 +204,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="sSr-WN-BQG"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="nbN-Zw-hto"/>
@@ -222,7 +223,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="horizontal"/>
                             </stackView>
                             <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iDF-y2-AZf" userLabel="Swipe View">
-                                <rect key="frame" x="374" y="5.3333333333333339" width="178" height="26.666666666666664"/>
+                                <rect key="frame" x="374" y="35.333333333333336" width="178" height="26.666666666666664"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="OWs-sj-Bfg" userLabel="arrow">
                                         <rect key="frame" x="0.0" y="11" width="25" height="5"/>
@@ -244,13 +245,14 @@
                                 <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.71372550729999995" green="0.84313726430000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cP4-XI-sZq" secondAttribute="bottom" constant="20" id="0zj-Sw-IdY"/>
-                            <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2FO-17-B7z"/>
+                            <constraint firstItem="Q6Z-E3-x13" firstAttribute="top" secondItem="cP4-XI-sZq" secondAttribute="bottom" constant="20" id="0zj-Sw-IdY"/>
+                            <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2FO-17-B7z">
+                                <variation key="heightClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerX" secondItem="k00-Du-UCm" secondAttribute="centerX" id="HRu-h9-PvU"/>
-                            <constraint firstItem="k00-Du-UCm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="O7u-HV-ut7"/>
+                            <constraint firstItem="k00-Du-UCm" firstAttribute="top" secondItem="Kx1-4B-zRY" secondAttribute="bottom" constant="20" id="O7u-HV-ut7"/>
                             <constraint firstItem="k00-Du-UCm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Q1m-jk-Wvw"/>
                             <constraint firstItem="iDF-y2-AZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="duK-Mp-lLw"/>
                             <constraint firstItem="k00-Du-UCm" firstAttribute="centerX" secondItem="cP4-XI-sZq" secondAttribute="centerX" id="exg-wi-rWi"/>
