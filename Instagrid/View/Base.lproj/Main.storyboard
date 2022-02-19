@@ -90,7 +90,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-XI-sZq" userLabel="Layout">
-                                <rect key="frame" x="782" y="76" width="80" height="276"/>
+                                <rect key="frame" x="782" y="109" width="80" height="276"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by3-W6-7is" userLabel="ButtonLayout1">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -199,7 +199,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iDF-y2-AZf" userLabel="Swipe View">
-                                <rect key="frame" x="123" y="195.66666666666666" width="180" height="37"/>
+                                <rect key="frame" x="123" y="228.66666666666666" width="180" height="36.999999999999972"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="OWs-sj-Bfg" userLabel="arrow">
                                         <rect key="frame" x="0.0" y="12.666666666666686" width="55.666666666666664" height="11.333333333333336"/>
@@ -234,7 +234,7 @@
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8c4-Mz-5P2"/>
                             <constraint firstItem="lLH-Hl-Lr1" firstAttribute="trailing" secondItem="cP4-XI-sZq" secondAttribute="trailing" constant="20" id="EcI-WW-HRI"/>
                             <constraint firstItem="lLH-Hl-Lr1" firstAttribute="bottom" secondItem="cP4-XI-sZq" secondAttribute="bottom" constant="20" id="Hgf-QH-HM7"/>
-                            <constraint firstItem="cP4-XI-sZq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J7D-0b-Yh6"/>
+                            <constraint firstItem="cP4-XI-sZq" firstAttribute="centerY" secondItem="Kbu-wU-A9S" secondAttribute="centerY" id="J7D-0b-Yh6"/>
                             <constraint firstItem="lLH-Hl-Lr1" firstAttribute="bottom" secondItem="Kbu-wU-A9S" secondAttribute="bottom" constant="10" id="Jcw-US-a0C"/>
                             <constraint firstItem="k00-Du-UCm" firstAttribute="top" secondItem="lLH-Hl-Lr1" secondAttribute="top" id="LNo-g3-egZ"/>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ncl-Cq-T4Z"/>
@@ -243,7 +243,7 @@
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="top" secondItem="iDF-y2-AZf" secondAttribute="bottom" constant="20" id="ZUb-zz-iWM"/>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="leading" secondItem="iDF-y2-AZf" secondAttribute="trailing" constant="10" id="aBD-Rx-HAQ"/>
                             <constraint firstItem="iDF-y2-AZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="miC-93-GUL"/>
-                            <constraint firstItem="iDF-y2-AZf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ozY-KB-Sb3"/>
+                            <constraint firstItem="iDF-y2-AZf" firstAttribute="centerY" secondItem="Kbu-wU-A9S" secondAttribute="centerY" id="ozY-KB-Sb3"/>
                             <constraint firstItem="cP4-XI-sZq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vbt-Gl-efa"/>
                             <constraint firstItem="k00-Du-UCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJF-wV-bXX"/>
                         </constraints>
@@ -252,14 +252,14 @@
                                 <exclude reference="EcI-WW-HRI"/>
                                 <exclude reference="Hgf-QH-HM7"/>
                                 <exclude reference="Jcw-US-a0C"/>
-                                <exclude reference="LNo-g3-egZ"/>
-                                <exclude reference="Yqx-SE-WKg"/>
                                 <exclude reference="miC-93-GUL"/>
                                 <exclude reference="ozY-KB-Sb3"/>
                                 <exclude reference="8c4-Mz-5P2"/>
                                 <exclude reference="QBv-fA-75l"/>
                                 <exclude reference="ZUb-zz-iWM"/>
                                 <exclude reference="aBD-Rx-HAQ"/>
+                                <exclude reference="LNo-g3-egZ"/>
+                                <exclude reference="Yqx-SE-WKg"/>
                                 <exclude reference="J7D-0b-Yh6"/>
                                 <exclude reference="vbt-Gl-efa"/>
                             </mask>
@@ -271,20 +271,20 @@
                             <mask key="constraints">
                                 <include reference="EcI-WW-HRI"/>
                                 <include reference="Jcw-US-a0C"/>
-                                <include reference="Yqx-SE-WKg"/>
                                 <include reference="ozY-KB-Sb3"/>
                                 <include reference="aBD-Rx-HAQ"/>
+                                <include reference="Yqx-SE-WKg"/>
                                 <include reference="J7D-0b-Yh6"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Hgf-QH-HM7"/>
-                                <include reference="LNo-g3-egZ"/>
                                 <include reference="miC-93-GUL"/>
                                 <include reference="8c4-Mz-5P2"/>
                                 <exclude reference="QBv-fA-75l"/>
                                 <include reference="ZUb-zz-iWM"/>
+                                <include reference="LNo-g3-egZ"/>
                                 <include reference="vbt-Gl-efa"/>
                             </mask>
                         </variation>
