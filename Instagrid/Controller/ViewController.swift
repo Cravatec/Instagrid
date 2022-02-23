@@ -115,11 +115,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     @objc func changeDeviceOrientation() {
         if UIDevice.current.orientation == .landscapeRight || UIDevice.current.orientation == .landscapeLeft {
             swipeLabel.text = "Swipe left to share"
-            arrow.image = UIImage(named: "Arrow Left")
+            arrow.image = UIImage(named: "Arrow-Left")
             swipeGesture.direction = .left
         } else {
             swipeLabel.text = "Swipe up to share"
-            arrow.image = UIImage(named: "Arrow Up")
+            arrow.image = UIImage(named: "Arrow-Up")
             swipeGesture.direction = .up
         }
     }
