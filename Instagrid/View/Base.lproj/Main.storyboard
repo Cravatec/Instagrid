@@ -26,16 +26,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbu-wU-A9S" userLabel="Grid">
-                                <rect key="frame" x="149" y="40" width="270" height="270"/>
+                                <rect key="frame" x="154" y="50" width="260" height="260"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-qH-prI">
-                                        <rect key="frame" x="15" y="15" width="240" height="240"/>
+                                        <rect key="frame" x="15" y="15" width="230" height="230"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UTz-fw-ULS">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="112.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="107.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-8y-w74" userLabel="Button1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="112.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="107.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -43,7 +43,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7X-8T-h3U" userLabel="Button2">
-                                                        <rect key="frame" x="127.5" y="0.0" width="112.5" height="112.5"/>
+                                                        <rect key="frame" x="122.5" y="0.0" width="107.5" height="107.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -53,10 +53,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="A7i-Ts-aaF">
-                                                <rect key="frame" x="0.0" y="127.5" width="240" height="112.5"/>
+                                                <rect key="frame" x="0.0" y="122.5" width="230" height="107.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5K-fP-QIM" userLabel="Button3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="112.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="107.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -64,7 +64,7 @@
                                                         </connections>
                                                     </button>
                                                     <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-fA-rii" userLabel="Button4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="112.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="107.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus"/>
                                                         <connections>
@@ -86,17 +86,17 @@
                                     <constraint firstItem="VTO-qH-prI" firstAttribute="top" secondItem="Kbu-wU-A9S" secondAttribute="top" constant="15" id="D5y-jR-NKK"/>
                                     <constraint firstItem="VTO-qH-prI" firstAttribute="centerX" secondItem="Kbu-wU-A9S" secondAttribute="centerX" id="JO7-Lb-vDG"/>
                                     <constraint firstAttribute="width" constant="300" id="Wvd-4i-C8l">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="270"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="260"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="300"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="300" id="Z7v-Xa-RhW">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="270"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="260"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="300"/>
                                     </constraint>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-XI-sZq" userLabel="Layout">
-                                <rect key="frame" x="478" y="52" width="70" height="246"/>
+                                <rect key="frame" x="478" y="57" width="70" height="246"/>
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by3-W6-7is" userLabel="ButtonLayout1">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -248,24 +248,24 @@
                                 <variation key="heightClass=regular-widthClass=compact" alignment="fill" axis="horizontal"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k00-Du-UCm">
-                                <rect key="frame" x="184" y="0.0" width="200" height="50.5"/>
+                                <rect key="frame" x="184" y="0.0" width="200" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="8VC-cI-m7g"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50.5" id="EIB-f5-VTj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="200" id="8VC-cI-m7g"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="50.5" id="EIB-f5-VTj"/>
                                 </constraints>
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="49"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="36"/>
+                                    <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="42"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular">
                                     <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="49"/>
                                 </variation>
                             </label>
                             <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iDF-y2-AZf" userLabel="Swipe View">
-                                <rect key="frame" x="-6" y="156.5" width="150" height="37"/>
+                                <rect key="frame" x="-1" y="161.5" width="150" height="37"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="Arrow-Up" translatesAutoresizingMaskIntoConstraints="NO" id="OWs-sj-Bfg" userLabel="arrow">
                                         <rect key="frame" x="68.5" y="0.0" width="13" height="13"/>
@@ -311,12 +311,14 @@
                             <constraint firstItem="k00-Du-UCm" firstAttribute="top" secondItem="lLH-Hl-Lr1" secondAttribute="top" id="LNo-g3-egZ"/>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ncl-Cq-T4Z"/>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QBv-fA-75l"/>
+                            <constraint firstItem="Kbu-wU-A9S" firstAttribute="top" secondItem="k00-Du-UCm" secondAttribute="bottom" constant="5" id="TjB-oA-a15"/>
                             <constraint firstItem="k00-Du-UCm" firstAttribute="top" secondItem="lLH-Hl-Lr1" secondAttribute="top" id="Yqx-SE-WKg">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="top" secondItem="iDF-y2-AZf" secondAttribute="bottom" constant="20" id="ZUb-zz-iWM"/>
                             <constraint firstItem="Kbu-wU-A9S" firstAttribute="leading" secondItem="iDF-y2-AZf" secondAttribute="trailing" constant="5" id="aBD-Rx-HAQ"/>
                             <constraint firstItem="iDF-y2-AZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="miC-93-GUL"/>
+                            <constraint firstItem="Kbu-wU-A9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="o83-f5-RcM"/>
                             <constraint firstItem="iDF-y2-AZf" firstAttribute="centerY" secondItem="Kbu-wU-A9S" secondAttribute="centerY" id="ozY-KB-Sb3"/>
                             <constraint firstItem="cP4-XI-sZq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vbt-Gl-efa"/>
                             <constraint firstItem="k00-Du-UCm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJF-wV-bXX"/>
@@ -327,14 +329,16 @@
                                 <exclude reference="EcI-WW-HRI"/>
                                 <exclude reference="Hgf-QH-HM7"/>
                                 <exclude reference="Jcw-US-a0C"/>
-                                <exclude reference="LNo-g3-egZ"/>
-                                <exclude reference="Yqx-SE-WKg"/>
                                 <exclude reference="miC-93-GUL"/>
                                 <exclude reference="ozY-KB-Sb3"/>
                                 <exclude reference="8c4-Mz-5P2"/>
                                 <exclude reference="QBv-fA-75l"/>
+                                <exclude reference="TjB-oA-a15"/>
                                 <exclude reference="ZUb-zz-iWM"/>
                                 <exclude reference="aBD-Rx-HAQ"/>
+                                <exclude reference="o83-f5-RcM"/>
+                                <exclude reference="LNo-g3-egZ"/>
+                                <exclude reference="Yqx-SE-WKg"/>
                                 <exclude reference="HKK-IE-Hc1"/>
                                 <exclude reference="J7D-0b-Yh6"/>
                                 <exclude reference="vbt-Gl-efa"/>
@@ -347,9 +351,11 @@
                             <mask key="constraints">
                                 <include reference="EcI-WW-HRI"/>
                                 <exclude reference="Jcw-US-a0C"/>
-                                <include reference="Yqx-SE-WKg"/>
                                 <include reference="ozY-KB-Sb3"/>
+                                <include reference="TjB-oA-a15"/>
                                 <include reference="aBD-Rx-HAQ"/>
+                                <include reference="o83-f5-RcM"/>
+                                <include reference="Yqx-SE-WKg"/>
                                 <include reference="J7D-0b-Yh6"/>
                             </mask>
                         </variation>
@@ -367,11 +373,11 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Hgf-QH-HM7"/>
-                                <include reference="LNo-g3-egZ"/>
                                 <include reference="miC-93-GUL"/>
                                 <include reference="8c4-Mz-5P2"/>
                                 <exclude reference="QBv-fA-75l"/>
                                 <include reference="ZUb-zz-iWM"/>
+                                <include reference="LNo-g3-egZ"/>
                                 <include reference="vbt-Gl-efa"/>
                             </mask>
                         </variation>
