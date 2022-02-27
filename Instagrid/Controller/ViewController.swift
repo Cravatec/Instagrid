@@ -30,16 +30,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Choose the center layout2 at launch
+        
+        //Choose the layout2 by default
         layoutSelect(.layout2)
         
-        swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(shareSwipe(_:)))
+        swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeToShare(_:)))
         
         grid.addGestureRecognizer(swipeGesture)
         
         NotificationCenter.default.addObserver(self, selector: #selector(changeDeviceOrientation),
                                                name: UIDevice.orientationDidChangeNotification, object: nil)
+
     }
+    
     //switch for the disposition box in the grid and the selected layout bouton
     func layoutSelect(_ layoutDisplay: Layouts) {
         switch layoutDisplay {
@@ -69,6 +72,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             gridBox[3].isHidden = false
         }
     }
+    
     //function for loading photoLibrary
     func loadPhotos() {
         let imagePickerController = UIImagePickerController()
@@ -77,6 +81,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
     }
+    
     //Replace photo in the box
     @objc func imagePickerController(_ picker: UIImagePickerController,
                                      didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
@@ -86,6 +91,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             self.dismiss(animated: true, completion: nil)
         }
     }
+    
     //sender for boutons in the gridbox
     @IBAction func pushPhotoButtons(_ sender: UIButton) {
         loadPhotos()
@@ -100,6 +106,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             buttonSwitch = gridBox[3]
         }
     }
+    
     //sender for the layout boutons
     @IBAction func pushLayoutButtons(_ sender: UIButton) {
         let tag = sender.tag
@@ -111,25 +118,40 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             layoutSelect(.layout3)
         }
     }
+    
     //change for SwipeLabel text depending of orientation
     @objc func changeDeviceOrientation() {
         if UIDevice.current.orientation == .landscapeRight || UIDevice.current.orientation == .landscapeLeft {
             swipeLabel.text = "Swipe left to share"
             arrow.image = UIImage(named: "Arrow-Left")
             swipeGesture.direction = .left
+            swipeLabelAnimation(axeX: -3, axeY: 0)
+
         } else {
             swipeLabel.text = "Swipe up to share"
             arrow.image = UIImage(named: "Arrow-Up")
             swipeGesture.direction = .up
+            swipeLabelAnimation(axeX: 0, axeY: -5)
         }
     }
-    //function when the user swipe
-    @objc func shareSwipe(_ sender: UISwipeGestureRecognizer) {
+    
+    func swipeLabelAnimation(axeX: CGFloat, axeY: CGFloat) {
+        UIView.animate(withDuration: 0.9, delay: 0, options: [.repeat, .autoreverse], animations: {
+            self.swipeLabel.transform = CGAffineTransform(translationX: axeX, y: axeY)
+            self.swipeLabel.transform = .identity
+            
+            self.arrow.transform = CGAffineTransform(translationX: axeX, y: axeY)
+            self.arrow.transform = .identity
+        }, completion: nil)
+    }
+    
+    @objc func swipeToShare(_ sender: UISwipeGestureRecognizer) {
         if sender.state == .recognized {
             gridAnimation()
             sharePhotos()
         }
     }
+    
     //functions for saving images grid with UIImage
     func saveImageGrid(with view: UIView) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
@@ -138,6 +160,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         }
         return image
     }
+    
     //sharing the image result
     func sharePhotos() {
         let sharingImage = saveImageGrid(with: grid)
@@ -148,6 +171,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             self.reverseGridAnimation()
         }
     }
+    
     //grid animation when the user swipe in landscape or portrait
     func gridAnimation() {
         let gridAnim = CGAffineTransform(scaleX: 0.4, y: 0.4)
@@ -167,6 +191,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             swipeLabel.isHidden = true
         }
     }
+    
     //Reverse grid animation when the user end with sharing in UIActivityViewController
     func reverseGridAnimation() {
         UIView.animate(withDuration: 0.5, delay: 0, animations: {
@@ -176,4 +201,3 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         swipeLabel.isHidden = false
     }
 }
-
