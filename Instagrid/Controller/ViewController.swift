@@ -10,10 +10,6 @@ import Photos
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     @IBOutlet var layouts: [UIButton]!
     @IBOutlet var gridBox: [UIButton]!
     @IBOutlet weak var arrow: UIImageView!
