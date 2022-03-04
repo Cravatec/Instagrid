@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Photos
+//import Photos
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
@@ -36,8 +36,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         
         NotificationCenter.default.addObserver(self, selector: #selector(changeDeviceOrientation),
                                                name: UIDevice.orientationDidChangeNotification, object: nil)
-
+        
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     
     //switch for the disposition box in the grid and the selected layout bouton
     func layoutSelect(_ layoutDisplay: Layouts) {
@@ -46,25 +51,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             layouts[0].setImage(UIImage(named: "Selected"), for: .normal)
             layouts[1].setImage(UIImage(named: "Default Image"), for: .normal)
             layouts[2].setImage(UIImage(named: "Default Image"), for: .normal)
-            gridBox[0].isHidden = false
             gridBox[1].isHidden = true
-            gridBox[2].isHidden = false
             gridBox[3].isHidden = false
         case .layout2:
             layouts[0].setImage(UIImage(named: "Default Image"), for: .normal)
             layouts[1].setImage(UIImage(named: "Selected"), for: .normal)
             layouts[2].setImage(UIImage(named: "Default Image"), for: .normal)
-            gridBox[0].isHidden = false
             gridBox[1].isHidden = false
-            gridBox[2].isHidden = false
             gridBox[3].isHidden = true
         case .layout3:
             layouts[0].setImage(UIImage(named: "Default Image"), for: .normal)
             layouts[1].setImage(UIImage(named: "Default Image"), for: .normal)
             layouts[2].setImage(UIImage(named: "Selected"), for: .normal)
-            gridBox[0].isHidden = false
             gridBox[1].isHidden = false
-            gridBox[2].isHidden = false
             gridBox[3].isHidden = false
         }
     }
@@ -79,7 +78,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
     
     //Replace photo in the box
-    @objc func imagePickerController(_ picker: UIImagePickerController,
+    func imagePickerController(_ picker: UIImagePickerController,
                                      didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let newPicture = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             buttonSwitch.setImage(newPicture, for: .normal)
@@ -122,7 +121,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             arrow.image = UIImage(named: "Arrow-Left")
             swipeGesture.direction = .left
             swipeLabelAnimation(axeX: -3, axeY: 0)
-
+            
         } else {
             swipeLabel.text = "Swipe up to share"
             arrow.image = UIImage(named: "Arrow-Up")
